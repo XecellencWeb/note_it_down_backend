@@ -2,17 +2,14 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "index.ts",
+  
   "scripts": {
-    "start": "node --experimental-specifier-resolution=node --loader ts-node/esm index.ts"
+    "start": "ts-node --esm index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "compilerOptions": {
-    "target": "es6"
-  },
   "dependencies": {
     "@apollo/server": "^4.9.5",
     "apollo-server": "^3.13.0",
@@ -20,7 +17,8 @@
     "graphql": "^16.8.1",
     "mogoose": "^0.0.1-security",
     "mongoose": "^8.0.3",
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "tsx": "^4.7.0"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
